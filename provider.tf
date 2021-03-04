@@ -1,4 +1,4 @@
 provider "google" {
-  project     = "balao-magico"
-  region      = "us-east1"
+  project = "balao-magico"
+  region  = "us-east1"
 }

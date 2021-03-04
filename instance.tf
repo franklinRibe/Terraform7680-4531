@@ -1,7 +1,7 @@
 resource "google_compute_instance" "vm2" {
-  name         = var.vm-name
-  machine_type = var.machine_type
-  zone         = var.zone
+  name                      = var.vm-name
+  machine_type              = var.machine_type
+  zone                      = var.zone
   allow_stopping_for_update = var.allow-stop
 
   boot_disk {
