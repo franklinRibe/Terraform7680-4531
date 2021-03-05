@@ -1,8 +1,8 @@
 ############### Instance variables
 
 variable "vm-name" {
-  type    = string
-  default = "vm2"
+  type    = list(string)
+  default = ["vm-db","vm-rh", "vm-ti", "vm-app", "vm-web"]
 }
 variable "machine_type" {
   type    = string
