@@ -1,6 +1,6 @@
 resource "google_compute_instance" "vm" {
-  count                     = length(var.vm-name)
-  name                      = var.vm-name[count.index]
+  for_each                  = toset(var.vm-name)
+  name                      = each.value
   machine_type              = var.machine_type
   zone                      = var.zone
   allow_stopping_for_update = var.allow-stop

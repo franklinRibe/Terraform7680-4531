@@ -4,6 +4,7 @@ variable "vm-name" {
   type    = list(string)
   default = ["vm-db","vm-rh", "vm-ti", "vm-app", "vm-web"]
 }
+
 variable "machine_type" {
   type    = string
   default = "f1-micro"
